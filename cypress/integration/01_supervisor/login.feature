@@ -1,10 +1,10 @@
 Feature: Login to Application
 
   As a valid user
-  i want to login to rhymes-staging
+  i want to login to rhymes
 
-  Scenario: Login to rhymes-staging
-    Given I open the rhymes-staging login page
+  Scenario: Login to rhymes
+    Given I open the rhymes login page
     When I click on Login with email button
     And I submit login
     Then I should see dashboard page

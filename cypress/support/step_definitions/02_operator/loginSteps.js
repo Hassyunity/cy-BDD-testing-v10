@@ -1,6 +1,6 @@
 import { Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
 
-Given('I open the rhymes-staging login page', () => {
+Given('I open the rhymes login page', () => {
   cy.visit('http://localhost:3000')
 });
 

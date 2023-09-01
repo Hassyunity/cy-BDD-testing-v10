@@ -1,18 +1,7 @@
 import { Given, When, Then, And} from "cypress-cucumber-preprocessor/steps";
 
 Given('I am logged-in as a user', () => {
-  cy.visit('http://localhost:3000')
-  cy.get('#login-toggle')
-    .click()
-  cy.get('#user_email')
-    .type('has.fetra@ingedata.ai')
-  cy.get('#user_password')
-    .type('has.fetra@ingedata.ai')
-  cy.get('.login-button')
-    .eq(1)
-    .click()
-  cy.get('#model-errors.callout.flash.info')
-    .should('contain', 'Signed in successfully.')
+  cy.login("supervisor");
 });
 
 And('I am on the account information page', () => {

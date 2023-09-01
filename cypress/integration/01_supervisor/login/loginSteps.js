@@ -1,6 +1,6 @@
 import { Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
 
-Given('I open the rhymes-staging login page', () => {
+Given('I open the rhymes login page', () => {
   cy.visit('http://localhost:3000')
 });
 
@@ -9,8 +9,8 @@ When('I click on Login with email button', () => {
 });
 
 And('I submit login', () => {
-  cy.get('#user_email').type('has.fetra@ingedata.ai')
-  cy.get('#user_password').type('has.fetra@ingedata.ai')
+  cy.get('#user_email').type('supervisor@ingedata.ai')
+  cy.get('#user_password').type('ingedata.test')
   cy.get('.login-button').eq(1).click()
 });
 
